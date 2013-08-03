@@ -9,10 +9,14 @@ The other messages being outputted by the GPS are simply ignored by the microcon
 A usual transmission from the GPS looks like this:
 
  $GPGGA,064913.119,,,,,0,0,,,M,,M,,*48
+
  $GPGLL,,,,,064913.119,V,N*7A
  $GPGSA,A,1,,,,,,,,,,,,,,,*1E
+
  $GPGSV,1,1,00*79
+
  $GPRMC,064913.119,V,,,,,0.00,0.00,100180,,,N*45
+
  $GPVTG,0.00,T,,M,0.00,N,0.00,K,N*32
  
 Watching the serial output from the ATmega using putty, we can see the parsed message, which looks like this:
